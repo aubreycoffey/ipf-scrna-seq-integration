@@ -76,7 +76,7 @@ ipf-scrna-seq-integration/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ipf-scrna-seq-integration.git
+git clone https://github.com/aubreycoffey/ipf-scrna-seq-integration.git
 cd ipf-scrna-seq-integration
 ```
 
@@ -135,7 +135,7 @@ Notebooks are numbered and should be run sequentially. Each notebook saves inter
 If you use this code or analysis, please cite:
 
 ```bibtex
-@article{YOUR_NAME_ipf_2025,
+@article{aubreycoffey_ipf_2025,
   title   = {Cross-cohort integrative single-cell transcriptomic analysis reveals
              coordinated cell state transitions, intercellular signaling rewiring,
              and transcription factor programs in idiopathic pulmonary fibrosis},
