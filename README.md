@@ -1,6 +1,6 @@
 # ipf-scrna-seq-integration
 
-**Cross-cohort integrative single-cell transcriptomic analysis of idiopathic pulmonary fibrosis: trajectory inference, cell-cell communication, and transcription factor regulon analysis across all major lung compartments.**
+**Cross-cohort integrative single-cell transcriptomic analysis reveals coordinated cell state transitions, intercellular signaling rewiring, and transcription factor programs in idiopathic pulmonary fibrosis.**
 
 ---
 
