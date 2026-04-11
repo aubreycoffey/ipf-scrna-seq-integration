@@ -251,19 +251,30 @@ print("\n── Loading ──────────────────�
 
 print("  Reading barcodes...")
 with gzip.open(f"{GSE2_DIR}/GSE136831_AllCells.cellBarcodes.txt.gz", "rt") as f:
-    barcodes2 = [line.strip() for line in f]
+    lines2 = [line.strip().replace('"', '') for line in f if line.strip()]
+# Skip header row if present
+if lines2 and any(k in lines2[0].upper() for k in ["BARCODE", "CELL", "ID"]):
+    lines2 = lines2[1:]
+barcodes2 = lines2
 print(f"  {len(barcodes2):,} cells")
 
 print("  Reading genes...")
 with gzip.open(f"{GSE2_DIR}/GSE136831_AllCells.GeneIDs.txt.gz", "rt") as f:
-    genes_raw2 = [line.strip().split("\t") for line in f]
-# GSE136831 gene file format: determine columns from first row
+    genes_raw2 = [line.strip().replace('"', '').split("\t") for line in f]
+
+# GSE136831 has a header row — skip it if first entry looks like a column name
+first = genes_raw2[0][0].upper()
+if any(k in first for k in ["ID", "GENE", "HGNC", "ENSEMBL", "SYMBOL"]):
+    genes_raw2 = genes_raw2[1:]
+
+# Determine column layout: [ensembl_id, gene_symbol] or [gene_symbol] only
 if len(genes_raw2[0]) >= 2:
     gene_ids2     = [g[0] for g in genes_raw2]
     gene_symbols2 = [g[1] for g in genes_raw2]
 else:
     gene_ids2     = [g[0] for g in genes_raw2]
     gene_symbols2 = gene_ids2
+
 print(f"  {len(gene_ids2):,} genes  |  example: {gene_symbols2[:3]}")
 
 print("  Reading count matrix (~3–5 min for 2 GB)...")
