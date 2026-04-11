@@ -164,4 +164,4 @@ MIT License. See [`LICENSE`](LICENSE) for details.
 
 ## Contact
 
-Questions or issues? Open a GitHub issue or reach out at [YOUR EMAIL].
+Questions or issues? Open a GitHub issue or reach out at aubreymariecoffey@gmail.com.
