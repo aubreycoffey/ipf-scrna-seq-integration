@@ -38,12 +38,13 @@ bash data/download_data.sh
 ipf-scrna-seq-integration/
 │
 ├── README.md
-├── environment.yml              # Conda environment with pinned versions
+├── environment.yml             
 ├── requirements.txt
 │
 ├── data/
-│   ├── README.md                # Download instructions
-│   └── download_data.sh         # GEOparse-based download script
+│   ├── README.md
+│   │── colab_setup_cell.py               
+│   └── download_data.sh        
 │
 ├── notebooks/
 │   ├── 01_qc_preprocessing.ipynb
