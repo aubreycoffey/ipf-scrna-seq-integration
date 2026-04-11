@@ -139,7 +139,7 @@ If you use this code or analysis, please cite:
   title   = {Cross-cohort integrative single-cell transcriptomic analysis reveals
              coordinated cell state transitions, intercellular signaling rewiring,
              and transcription factor programs in idiopathic pulmonary fibrosis},
-  author  = {YOUR NAME},
+  author  = {Aubrey Coffey},
   journal = {arXiv},
   year    = {2025},
   url     = {https://arxiv.org/abs/XXXX.XXXXX}
@@ -150,12 +150,6 @@ Please also cite the original data sources:
 
 - Habermann et al. (2020) *Science Advances* doi:10.1126/sciadv.aba1972
 - Adams et al. (2020) *Science Advances* doi:10.1126/sciadv.aba1983
-
----
-
-## License
-
-MIT License. See [`LICENSE`](LICENSE) for details.
 
 ---
 
