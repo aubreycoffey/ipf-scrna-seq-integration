@@ -2,10 +2,6 @@
 
 **Cross-cohort integrative single-cell transcriptomic analysis of idiopathic pulmonary fibrosis: trajectory inference, cell-cell communication, and transcription factor regulon analysis across all major lung compartments.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
-
 ---
 
 ## Overview
