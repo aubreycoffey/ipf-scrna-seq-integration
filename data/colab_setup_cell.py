@@ -2,7 +2,9 @@
 ================================================================================
 IPF scRNA-seq Integration Project — Colab Setup & Data Loading
 ================================================================================
-Paste this entire file as the first cell in each notebook when running in Colab.
+Run this file to set up the data in Google Drive. This only needs to be done 
+once. For subsequent notebooks, just run the header at the top of this file. 
+
 For local / cloud VM use, set IN_COLAB = False and adjust PROJECT_DIR below.
 
 What this does:
@@ -16,6 +18,32 @@ What this does:
   8. Saves a processed .h5ad to data/processed/ for downstream notebooks
 ================================================================================
 """
+
+
+
+# Standard header for notebooks 01–07
+import sys, os
+IN_COLAB = "google.colab" in sys.modules
+if IN_COLAB:
+    from google.colab import drive
+    drive.mount("/content/drive")
+    PROJECT_DIR = "/content/drive/MyDrive/ipf-scrna-seq-integration"
+else:
+    PROJECT_DIR = os.path.dirname(os.path.abspath("__file__"))
+
+DATA_DIR      = f"{PROJECT_DIR}/data"
+PROCESSED_DIR = f"{DATA_DIR}/processed"
+RESULTS_DIR   = f"{PROJECT_DIR}/results/figures"
+
+import scanpy as sc
+adata = sc.read_h5ad(f"{PROCESSED_DIR}/GSE135893_raw.h5ad")
+print(adata)
+
+
+
+
+
+
 
 # ── 0. Imports available before any installs ─────────────────────────────────
 
