@@ -48,25 +48,7 @@ ipf-scrna-seq-integration/
 │
 ├── notebooks/
 │   ├── 01_qc_preprocessing.ipynb
-│   ├── 02_integration_clustering.ipynb
-│   ├── 03_differential_analysis.ipynb
-│   ├── 04_trajectory_inference.ipynb
-│   ├── 05_cellchat_communication.ipynb
-│   ├── 06_pyscenic_regulons.ipynb
-│   └── 07_validation.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── integration.py
-│   ├── annotation.py
-│   ├── trajectory.py
-│   ├── communication.py
-│   ├── regulons.py
-│   └── plotting.py
-│
-└── results/
-    ├── figures/
-    └── tables/
+
 ```
 
 ---
@@ -99,12 +81,6 @@ Notebooks are numbered and should be run sequentially. Each notebook saves inter
 
 ```
 01 → QC and preprocessing (per dataset)
-02 → Cross-cohort integration, UMAP, clustering, annotation
-03 → Differential abundance and expression (IPF vs. control vs. COPD)
-04 → Trajectory inference (epithelial, mesenchymal, immune)
-05 → Cell-cell communication (LIANA)
-06 → Transcription factor regulon analysis (pySCENIC)
-07 → Cross-cohort validation and COPD specificity
 ```
 
 ---
@@ -122,34 +98,6 @@ Notebooks are numbered and should be run sequentially. Each notebook saves inter
 | Compositional testing | scCODA | Bayesian; IPF vs. control vs. COPD |
 | GSEA | GSEApy | Hallmark + KEGG gene sets |
 
----
-
-## Key Findings
-
-*(To be updated upon preprint submission)*
-
----
-
-## Citation
-
-If you use this code or analysis, please cite:
-
-```bibtex
-@article{aubreycoffey_ipf_2025,
-  title   = {Cross-cohort integrative single-cell transcriptomic analysis reveals
-             coordinated cell state transitions, intercellular signaling rewiring,
-             and transcription factor programs in idiopathic pulmonary fibrosis},
-  author  = {Aubrey Coffey},
-  journal = {arXiv},
-  year    = {2025},
-  url     = {https://arxiv.org/abs/XXXX.XXXXX}
-}
-```
-
-Please also cite the original data sources:
-
-- Habermann et al. (2020) *Science Advances* doi:10.1126/sciadv.aba1972
-- Adams et al. (2020) *Science Advances* doi:10.1126/sciadv.aba1983
 
 ---
 
